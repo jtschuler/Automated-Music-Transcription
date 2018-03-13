@@ -52,5 +52,6 @@ def convertRhythm(duration,partitions):
 	return duration
 	
 def convertStream(data):
-	for i in data:
-		i[1] = convertRhythm(i[1])
+	for i in range(len(data)):
+		data[i][1] = convertRhythm(data[i][1])
+		
